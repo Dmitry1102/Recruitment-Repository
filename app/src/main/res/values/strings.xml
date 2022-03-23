@@ -1,4 +1,5 @@
 <resources>
+    <string name="main_header">Program TV</string>
     <string name="app_name">android-junior</string>
     <string name="nav_drawer_main_screen">Strong główna</string>
     <string name="day_before_yesterday">Przedwczoraj</string>
