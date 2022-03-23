@@ -6,4 +6,8 @@
     <string name="today">Dzisiaj</string>
     <string name="tomorrow">Jutro</string>
     <string name="day_after_tomorrow">Pojutrze</string>
+    <string name="program_tv">Program TV</string>
+    <string name="channels">Kanały</string>
+    <string name="favourites">Ulubione</string>
+    <string name="recordings">Nagrania</string>
 </resources>
