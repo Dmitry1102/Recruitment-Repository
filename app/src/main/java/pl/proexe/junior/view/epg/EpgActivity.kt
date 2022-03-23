@@ -9,7 +9,6 @@ import pl.proexe.junior.model.data.DayTile
 import pl.proexe.junior.model.data.NavigationDrawerModel
 import pl.proexe.junior.model.data.TvProgramme
 import pl.proexe.junior.model.data.TvProgrammeCategory
-import pl.proexe.junior.model.repository.TimeRepository
 import pl.proexe.junior.presenter.epg.EpgPresenter
 import pl.proexe.junior.presenter.epg.LocalEpgPresenter
 
@@ -25,11 +24,15 @@ class EpgActivity : AppCompatActivity(), EpgView {
         super.onCreate(savedInstanceState)
         _binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
+        val fragment = EpgFragment()
 
         presenter.onViewCreated(this)
 
         binding.ivMainFrame.setOnClickListener {
-
+            supportFragmentManager
+                .beginTransaction()
+                .replace(binding.mainActivity.id, fragment)
+                .commit()
         }
 
     }

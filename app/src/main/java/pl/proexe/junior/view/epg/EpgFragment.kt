@@ -7,7 +7,7 @@ import android.view.ViewGroup
 import androidx.fragment.app.Fragment
 import pl.proexe.junior.databinding.InformationFragmentBinding
 
-class EgpFragment: Fragment() {
+class EpgFragment: Fragment() {
 
     private var _binding: InformationFragmentBinding? = null
     private val binding get() = checkNotNull(_binding)
@@ -23,6 +23,16 @@ class EgpFragment: Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+
+
+    }
+
+    override fun onDestroyView() {
+        super.onDestroyView()
+        _binding = null
+
+
+
     }
 
 
