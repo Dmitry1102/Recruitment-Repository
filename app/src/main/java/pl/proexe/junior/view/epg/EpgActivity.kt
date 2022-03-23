@@ -50,4 +50,11 @@ class EpgActivity : AppCompatActivity(), EpgView {
     override fun selectDayTile(dayTile: DayTile) {
 
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        _binding = null
+        binding.rvDate.adapter = null
+        binding.rvList.adapter = null
+    }
 }
