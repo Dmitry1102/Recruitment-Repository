@@ -27,6 +27,11 @@ class EpgActivity : AppCompatActivity(), EpgView {
         setContentView(binding.root)
 
         presenter.onViewCreated(this)
+
+        binding.ivMainFrame.setOnClickListener {
+
+        }
+
     }
 
     override fun showEpgList(programmes: List<TvProgramme>) {
