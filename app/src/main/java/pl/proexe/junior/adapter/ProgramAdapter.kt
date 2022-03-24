@@ -52,10 +52,4 @@ class ProgramHolder(
 
         binding.progressBar.progress = item.progressPercent
     }
-
-    private fun dateFormatter(date: String) {
-
-
-    }
-
 }
