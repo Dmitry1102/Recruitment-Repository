@@ -40,17 +40,19 @@ android {
 }
 
 dependencies {
-    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
-    implementation 'androidx.recyclerview:recyclerview:1.2.1'
     final ANDROIDX_VERSION = "1.0.2"
     final JUNIT_VERSION = "5.3.2"
     final COIL_VERSION = "1.4.0"
+    final CONSTRAINT = "2.1.3"
+    final RECYCLE = "1.2.1"
 
     implementation fileTree(dir: 'libs', include: ['*.jar'])
     implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
     implementation "androidx.appcompat:appcompat:$ANDROIDX_VERSION"
     implementation "androidx.core:core-ktx:$ANDROIDX_VERSION"
 
+    implementation "androidx.constraintlayout:constraintlayout:$CONSTRAINT"
+    implementation "androidx.recyclerview:recyclerview:$RECYCLE"
 
     testImplementation "org.junit.jupiter:junit-jupiter-api:$JUNIT_VERSION"
     testRuntimeOnly "org.junit.jupiter:junit-jupiter-engine:$JUNIT_VERSION"
