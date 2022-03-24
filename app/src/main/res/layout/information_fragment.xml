@@ -33,6 +33,7 @@
         app:layout_constraintTop_toBottomOf="@+id/label_frame">
 
         <ImageView
+            android:id="@+id/iv_logo"
             android:layout_width="48dp"
             android:layout_height="48dp"
             android:layout_marginStart="50dp"
@@ -43,12 +44,14 @@
             android:id="@+id/tv_account"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:textColor="@color/colorText"
             android:layout_marginStart="120dp"
             android:layout_marginTop="20dp" />
 
         <TextView
             android:id="@+id/tv_value"
             android:layout_width="wrap_content"
+            android:textColor="@color/colorRecyclerViewTimeItemNotSelected"
             android:layout_height="wrap_content"
             android:layout_marginStart="120dp"
             android:layout_marginTop="45dp" />
@@ -56,50 +59,55 @@
     </FrameLayout>
 
     <TextView
+        android:id="@+id/tv_main"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:textColor="@color/colorText"
+        android:textColor="@drawable/text_selector"
         android:text="@string/nav_drawer_main_screen"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/account_frame" />
 
     <TextView
+        android:id="@+id/tv_program"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="160dp"
-        android:textColor="@color/colorText"
+        android:textColor="@drawable/text_selector"
         android:text="@string/program_tv"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/account_frame" />
 
     <TextView
+        android:id="@+id/tv_channels"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="220dp"
-        android:textColor="@color/colorText"
+        android:textColor="@drawable/text_selector"
         android:text="@string/channels"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/account_frame" />
 
     <TextView
+        android:id="@+id/tv_favourite"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="280dp"
-        android:textColor="@color/colorText"
+        android:textColor="@drawable/text_selector"
         android:text="@string/favourites"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/account_frame" />
 
     <TextView
+        android:id="@+id/tv_record"
         android:layout_width="100dp"
         android:layout_height="wrap_content"
         android:layout_marginTop="340dp"
-        android:textColor="@color/colorText"
+        android:textColor="@drawable/text_selector"
         android:text="@string/recordings"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"

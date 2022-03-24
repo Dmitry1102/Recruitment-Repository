@@ -6,9 +6,19 @@
     <string name="today">Dzisiaj</string>
     <string name="tomorrow">Jutro</string>
     <string name="day_after_tomorrow">Pojutrze</string>
-    <string name="slash">|</string>
     <string name="channels">Kanały</string>
     <string name="favourites">Ulubione</string>
     <string name="recordings">Nagrania</string>
     <string name="program_tv">Program TV</string>
+    <string name="all">Wszystkie</string>
+    <string name="kids">Dzieci</string>
+    <string name="education">Edukacja</string>
+    <string name="films">Filmy i seriale</string>
+    <string name="information">Informacja</string>
+    <string name="music">Muzyka</string>
+    <string name="general">Ogólne</string>
+    <string name="sport">Sport</string>
+    <string name="lifestyle">Styl Życia</string>
+    <string name="ok"></string>
+
 </resources>

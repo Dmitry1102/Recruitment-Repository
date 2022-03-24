@@ -20,7 +20,7 @@ class TimeRepository {
         return cal.time.time
     }
 
-    fun getCurrentTime() = getCurrentCalendar().time
+    fun getCurrentTime(): Date = getCurrentCalendar().time
 
     private fun getCurrentCalendar() = Calendar.getInstance()
 }

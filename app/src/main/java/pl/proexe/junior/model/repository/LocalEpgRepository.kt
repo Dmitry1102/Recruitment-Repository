@@ -1,7 +1,7 @@
 package pl.proexe.junior.model.repository
 
-import pl.proexe.junior.model.data.TvProgramme
-import pl.proexe.junior.model.data.TvProgrammeCategory
+import android.annotation.SuppressLint
+import pl.proexe.junior.model.data.*
 import java.util.*
 import kotlin.random.Random
 
@@ -9,6 +9,8 @@ class LocalEpgRepository {
 
     companion object {
         private const val PROGRAMMES_LIST_SIZE = 10
+        private const val IMAGE =
+            "https://mars.jpl.nasa.gov/msl-raw-images/proj/msl/redops/ods/surface/sol/01000/opgs/edr/fcam/FLB_486265257EDR_F0481570FHAZ00323M_.JPG"
 
         val IMAGE_URLS = listOf(
             "https://www.dropbox.com/s/9u7kw2knftcur8v/channel_logo_09.png?dl=1",
@@ -34,6 +36,7 @@ class LocalEpgRepository {
             "Hobbit"
         )
 
+
         val TYPES = listOf(
             "Serial paradokumentalny",
             "Kryminał",
@@ -44,6 +47,35 @@ class LocalEpgRepository {
             "Dokumentalny",
             "Fabularny",
             "Przygodowy"
+        )
+    }
+
+    @SuppressLint("ResourceType")
+    fun createNavigationDrawerModule(): NavigationDrawerModel {
+        return NavigationDrawerModel(
+            logoUrl = IMAGE,
+            accountInfo = AccountInfo("Dzmitry", 122442L),
+            drawerItem = listOf(
+                NavigationDrawerItem(
+                    labelId = 12,
+                    isSelected = true
+                )
+            )
+        )
+    }
+
+    fun provideCategories(): List<TvProgrammeCategory> {
+        return listOf(
+            TvProgrammeCategory.ALL,
+            TvProgrammeCategory.FAVOURITE,
+            TvProgrammeCategory.KIDS,
+            TvProgrammeCategory.EDUCATIONAL,
+            TvProgrammeCategory.MOVIES_AND_SERIES,
+            TvProgrammeCategory.INFO,
+            TvProgrammeCategory.MUSIC,
+            TvProgrammeCategory.GENERAL,
+            TvProgrammeCategory.SPORT,
+            TvProgrammeCategory.LIFESTYLE
         )
     }
 

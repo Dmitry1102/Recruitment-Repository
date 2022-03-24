@@ -9,7 +9,7 @@ import pl.proexe.junior.view.epg.EpgView
 
 class LocalEpgPresenter : EpgPresenter {
 
-    lateinit var view: EpgView
+    private lateinit var view: EpgView
     private val epgRepository = LocalEpgRepository()
     private val timeRepository = TimeRepository()
 
@@ -17,6 +17,8 @@ class LocalEpgPresenter : EpgPresenter {
         this.view = view
         refreshDays()
         refreshProgrammes()
+        provideNavigationDrawer()
+        getCategories()
     }
 
     private fun refreshDays() =
@@ -37,11 +39,20 @@ class LocalEpgPresenter : EpgPresenter {
         view.selectDayTile(dayTile)
 
     override fun onCategoryClick(category: TvProgrammeCategory) =
-        view.showEpgList(
+          view.showEpgList(
             getProgrammes().filter {
                 category == TvProgrammeCategory.ALL || category == it.category
             }
         )
+
+    private fun getCategories(){
+       view.showCategories(epgRepository.provideCategories())
+    }
+
+    private fun provideNavigationDrawer(){
+        view.showNavigationDrawer(epgRepository.createNavigationDrawerModule())
+    }
+
 
     private fun getProgrammes() =
         epgRepository.getProgrammesForDateTime(timeRepository.getCurrentTime())

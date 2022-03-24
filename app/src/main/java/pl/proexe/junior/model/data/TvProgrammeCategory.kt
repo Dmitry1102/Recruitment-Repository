@@ -1,13 +1,14 @@
 package pl.proexe.junior.model.data
 
-enum class TvProgrammeCategory {
-    ALL,
-    KIDS,
-    EDUCATIONAL,
-    MOVIES_AND_SERIES,
-    INFO,
-    MUSIC,
-    GENERAL,
-    SPORT,
-    LIFESTYLE
+enum class TvProgrammeCategory(val type:String) {
+    ALL("Wszystkie"),
+    FAVOURITE("Ulubione"),
+    KIDS("Dzieci"),
+    EDUCATIONAL("Edukacja"),
+    MOVIES_AND_SERIES("Filmy i seriale"),
+    INFO("Informacja"),
+    MUSIC("Muzyka"),
+    GENERAL("Ogólne"),
+    SPORT("Sport"),
+    LIFESTYLE("Styl Życia")
 }

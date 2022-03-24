@@ -17,10 +17,10 @@
 
         <ImageView
             android:id="@+id/iv_main_frame"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="20dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="35dp"
             android:src="@drawable/ic_hamburger_v" />
 
         <TextView
@@ -36,10 +36,10 @@
 
         <ImageView
             android:id="@+id/iv_types"
-            android:layout_width="48dp"
-            android:layout_height="48dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
             android:layout_marginStart="340dp"
-            android:layout_marginTop="25dp"
+            android:layout_marginTop="35dp"
             android:src="@drawable/ic_all" />
     </FrameLayout>
 

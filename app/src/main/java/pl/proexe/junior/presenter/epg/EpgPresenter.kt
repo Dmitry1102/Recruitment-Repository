@@ -14,4 +14,7 @@ interface EpgPresenter {
     fun onDayTileClick(dayTile: DayTile)
 
     fun onCategoryClick(category: TvProgrammeCategory)
+
+
+
 }
